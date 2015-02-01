@@ -9,15 +9,16 @@
    *
    */
   angular
-    .module('polymerTest', [
+    .module('angularBa', [
       'ngAria',
       'ui.router',
       'mm.foundation',
-      'home'
+      'home',
+      'dashboard'
     ]);
 
   angular
-    .module('polymerTest')
+    .module('angularBa')
     .config(config);
 
   function config($urlRouterProvider) {

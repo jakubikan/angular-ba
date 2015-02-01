@@ -1,2 +1,15 @@
-<h2>home</h2>
-<p>{{home.ctrlName}}</p>
+<h2>Hello I'm at home and visiting {{ctrlName}}</h2>
+<label for="name">My name is</label>
+<input id="name" ng-model="name"/>
+<span>Hello, {{name}}!</span>
+<div ng-controller="TestOneCtrl">
+  {{title}}
+  <div ng-controller="TestTwoCtrl">
+    {{title}}
+    <div ng-controller="TestThreeCtrl">
+      {{title}}
+      <div ng-bind="$parent.title"></div>
+    </div>
+  </div>
+</div>
+

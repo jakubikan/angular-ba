@@ -12,9 +12,9 @@
     .module('home')
     .controller('HomeCtrl', HomeCtrl);
 
-  function HomeCtrl() {
-    var vm = this;
-    vm.ctrlName = 'HomeCtrl';
+  function HomeCtrl($scope) {
+    $scope.ctrlName = 'HomeCtrl';
+    $scope.name = 'Amanda Elderbrook';
   }
 
 })();

@@ -2,12 +2,15 @@
 'use strict';
 
 describe('TestOneCtrl', function () {
-  var ctrl;
+  var ctrl, scope;
 
   beforeEach(module('home'));
 
-  beforeEach(inject(function ($rootScope, $controller) {
-    ctrl = $controller('TestOneCtrl');
+  beforeEach(inject(function (_$rootScope_, $controller) {
+    scope = _$rootScope_;
+    ctrl = $controller('TestOneCtrl', {
+      $scope: scope
+    });
   }));
 
   it('should have ctrlName as TestOneCtrl', function () {

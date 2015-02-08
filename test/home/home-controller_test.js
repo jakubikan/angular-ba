@@ -2,16 +2,19 @@
 'use strict';
 
 describe('HomeCtrl', function () {
-  var ctrl;
+  var scope, ctrl;
 
   beforeEach(module('home'));
 
-  beforeEach(inject(function ($rootScope, $controller) {
-    ctrl = $controller('HomeCtrl');
+  beforeEach(inject(function (_$rootScope_, $controller) {
+    scope = _$rootScope_;
+    ctrl = $controller('HomeCtrl', {
+      $scope: scope
+    });
   }));
 
   it('should have ctrlName as HomeCtrl', function () {
-    expect(ctrl.ctrlName).toEqual('HomeCtrl');
+    expect(scope.ctrlName).toEqual('HomeCtrl');
   });
 
 });

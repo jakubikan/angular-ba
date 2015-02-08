@@ -16,9 +16,9 @@
     var vm = this;
     vm.ctrlName = 'TestFourCtrl';
     $scope.names = [
-      "Hippolyta",
-      "Mária",
-      "Adil"
+      'Hippolyta',
+      'Mária',
+      'Adil'
     ];
   }
 

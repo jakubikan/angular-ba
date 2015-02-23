@@ -1,4 +1,4 @@
-# polymer-test
+# Angular-Test
 
 ## Setup
 1. Install [Node.js](http://nodejs.org/)
